@@ -1,6 +1,7 @@
 # | || auto usmaxe <= [onso_882 . abiinis_643 . anxe];||, ||auto maedla
 # <= [anre . anus . eses_805 ];||,|| auto tibebi_499 <= [ erri . usedle
 # ]; ||, || auto usinus <= [bema . main_509 . orer]; ||,|
+import re
 
 
 def main(s):
@@ -20,6 +21,12 @@ def main(s):
     for key in range(len(a_names)):
         dct[a_names[key]] = a_contents[key]
     return dct
+
+# def main(s):
+#     pattern = r"decl `(\w+) ?==> ?'(\w+)"
+#     parsed_s = re.findall(pattern, s.replace('\n', ' '))
+#     return {key: value for value, key in parsed_s}
+
 
 # dct = {}
 # dct['new'] = 123
